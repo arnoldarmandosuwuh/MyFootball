@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>My Football</title>
+        <meta name="description" content="My Football PWA" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#42a5f5" />
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/fontawesome/fontawesome.min.css">
+        <link rel="stylesheet" href="css/fontawesome/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+        <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+        <link rel="preconnect" href="https://api.football-data.org/v2/">
+        <link rel="shortcut icon" href="/assets/icons/icon-96x96.png">
+    </head>
+
+    <body>
+        <nav class="blue lighten-1" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="#home" class="brand-logo" id="logo-container">MyFootball</a>
+                <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+
+                <ul class="topnav right hide-on-med-and-down"></ul>
+                <ul class="sidenav" id="nav-mobile"></ul>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container" id="content"></div>
+        </main>
+
+        <footer class="page-footer blue lighten-1">
+            <div class="container">
+                <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">My Football</h5>
+                    <p class="grey-text text-lighten-4">My Football merupakan sebuah aplikasi PWA berisi informasi terkait dunia sepakbola.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Find Me</h5>
+                    <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/arnoldarmandosuwuh/"><i class="fab fa-instagram"></i> @arnoldarmandosuwuh</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/arnoldarmando07"><i class="fab fa-facebook"></i> Arnold Armando Suwuh</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://twitter.com/arnoldarmando07"><i class="fab fa-twitter"></i> @arnoldarmando07</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://github.com/arnoldarmandosuwuh"><i class="fab fa-github"></i> arnoldarmandosuwuh</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                © 2020 Arnold Armando Suwuh
+                <a class="grey-text text-lighten-4 right" href="https://linktr.ee/arnoldarmandosuwuh">More</a>
+                </div>
+            </div>
+        </footer>
+  
+        <script type="text/javascript" src="https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"></script>
+        <script src="js/loader/nav.js"></script>
+        <script src="js/config/api.js"></script>
+        <script src="js/config/db.js"></script>
+        <script src="js/config/favorite.js"></script>
+        <script src="js/loader/match/detail.js"></script>
+        <script src="js/loader/match/favorite.js"></script>
+        <script src="js/loader/match/match.js"></script>
+        <script src="js/loader/player/favorite.js"></script>
+        <script src="js/loader/player/player.js"></script>
+        <script src="js/loader/team/favorite.js"></script>
+        <script src="js/loader/team/team.js"></script>
+        <script src="js/loader/home.js"></script>
+        <script src="js/loader/standing.js"></script>
+        <script src="js/utils/helpers.js"></script>
+        <script src="js/idb.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>    
+        <script src="js/main.js"></script>
+        <script src="js/materialize.min.js"></script>
+    </body>
+</html>
