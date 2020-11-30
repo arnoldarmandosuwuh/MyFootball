@@ -32,7 +32,7 @@ const getResultTeamFavoritesJSON = (data) => {
                                 ${index+1}
                             </div>
                             <div class="col s1 m1 l1 center-align">
-                                <img class="materialboxed" style="float:left; margin-right:20px" width="50" height="50" src="${item.crestUrl}">
+                                <img class="materialboxed" style="float:left; margin-right:20px" width="50" height="50" src="${item.crestUrl}" alt="crestCLub">
                             </div>
                             <div class="col s3 m3 l3 left-align">
                                 ${item.name}

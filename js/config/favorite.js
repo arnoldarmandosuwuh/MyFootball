@@ -6,17 +6,17 @@ const favMatch = 'fav_match'
 const favPlayer = 'fav_player'
 
 const tabFavorite = (type) => {
-    if (type == typeTeams) {
+    if (type === typeTeams) {
         getAllFavorites(favTeam).then((data) => {
             getResultTeamFavoritesJSON(data)
         })
     }
-    else if(type == typeMatches) {
+    else if(type === typeMatches) {
         getAllFavorites(favMatch).then((data) => {
             getResultMatchFavoritesJSON(data)
         })
     }
-    else if(type == typePlayers) {
+    else if(type === typePlayers) {
         getAllFavorites(favPlayer).then((data) => {
             getResultPlayerFavoritesJSON(data) 
         })
@@ -24,17 +24,17 @@ const tabFavorite = (type) => {
 }
 
 const getFavoriteById = (ID, type) => {
-    if (type == typeTeams) {
+    if (type === typeTeams) {
         getById(ID, favTeam).then((data) => {
             getResultTeamInfoJSON(data)
         })
     }
-    else if (type == typeMatches) {
+    else if (type === typeMatches) {
         getById(ID, favMatch).then((data) => {
             getResultMatchDetailJSON(data)
         })
     }
-    else if (type == typePlayers) {
+    else if (type === typePlayers) {
         getById(ID, favPlayer).then((data) => {
             getResultPlayerDetailJSON(data)
         })
@@ -43,13 +43,13 @@ const getFavoriteById = (ID, type) => {
 
 const addToFavorite = (data, storeName) => {
     let dataPrimaryKey
-    if (storeName == favTeam) {
+    if (storeName === favTeam) {
         dataPrimaryKey = data.id        
     }
-    else if (storeName == favMatch) {
+    else if (storeName === favMatch) {
         dataPrimaryKey = data.match.id
     }
-    else if (storeName == favPlayer) {
+    else if (storeName === favPlayer) {
         dataPrimaryKey = data.id
     }
 

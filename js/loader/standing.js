@@ -12,7 +12,7 @@ const getResultStandingsJSON = (data) => {
                     <td>
                         <a href="./pages/detailteam.html?id=${item.team.id}">
                             <p style="display: flex; align-items: center;">
-                                <img class="materialboxed" style="float:left; margin-right:20px" width="50" height="50" src="${item.team.crestUrl}">
+                                <img class="materialboxed" style="float:left; margin-right:20px" width="50" height="50" src="${item.team.crestUrl}" alt="crestCLub">
                                 ${item.team.name}
                             </p>
                         </a>
